@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mi portafolio</title>
 </head>
 <body>
     <header>
-        <h1>Mi portafolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Mi</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <img src="" alt="">
+        </div>
+        <div class="header">
+            <h1>Mi portafolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section id="about">
         <h2>Sobre mi</h2>
-        <p>Mi nombre es LEIDY JOHANA NIÑO VILLEGAS, tengo 31 años </p>
+        <p>¡Hola! Mi nombre es Leidy Johana Niño Villegas y tengo 31 años. Actualmente soy aprendiz en el SENA y en el Bootcamp de Talento Tech Oriente. Me apasiona la tecnología y disfruto profundamente lo que hago. Creo firmemente en mis habilidades y siempre busco aplicarlas de manera efectiva en cada situación. Estoy emocionada por las oportunidades que vienen y por seguir creciendo en este campo.</p>
     </section>
     <section id="portafolio">
         <h2>Portafolio</h2>
@@ -35,7 +41,17 @@
         </div>
     </section>
     <select id="contacto">
-        
+        <h2>Contacto</h2>
+        <form action="/submit" method="post">
+            <label for="name">Nombre: </label><br>
+            <input type="text" id="name" name="name" placeholder="Digite su nombre: " required><br>
+            <label for="email">Correo electronico:</label><br>
+            <input type="email" name="email" id="email" placeholder="Escriba su correo electronico:" required><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea name="message" id="message" placeholder="Aqui escriba su mensaje: " required></textarea><br>
+            <input type="submit" value="Enviar">
+            <button onclick="">cancelar</button>
+        </form>
     </select>
 </body>
 </html>
