@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.padre {
+    background: rgb(86, 202, 218);
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header {
+    background: url(../img/beach.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: contain;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.navegacion {
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    flex: 3 1 auto;
+}
+.logo {
+    width: calc(30%);
+    height: auto;
+    flex: 1 1 auto;
+    background-position: center;
+}
+.barra-nav-social {
+    display: flex;
+    flex-flow: row nowrap;
+    width: calc(70%);
+    height: 50px;
+    flex-flow: column;
+    align-content: center;
+    align-items: end;
+    text-align: center;
+}
+.social {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column nowrap;
+    margin: 20px;
+    align-items: center;
+    align-content: center; 
+
+}
+.social a {
+    text-decoration: none;
+    color: rgb(15, 46, 36);
+    padding: 5px;
+    margin: 5px;
+    align-items: left;
+    justify-content: left; 
+    letter-spacing: 5px;
+    border: 10px ; 
+    border-radius: 30px;
+
+}
+.social a :hover {
+    color: black;
+}
+.whatsApp:hover {
+    background: #25D366;
+}
+.facebook:hover {
+    background: #4267B2;
+}
+.instagram:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #777737, #FCAF45 );
+}
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.enlace {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.enlace:hover {
+    background: #69e4f5;
+    transform: perspective();
+}
+.boton {
+    display: none;
+    position: relative;
+    padding: 10px 80px;
+    list-style: none;
+    background: #69e4f5;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+section {
+    background: #d6d3d3;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 200px;
+}
+
+.fam {
+    display: inline-block;
+    width: 25%;
+    background: #69e4f5;
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    align-content: center;  
+    text-align: center;
+    flex-wrap: wrap;
+}
+.fam:hover{
+    transform: translate(-3);
+    box-shadow: 10px 10px 5px #2280fa;
+}
+.foto {
+    display: block; 
+    justify-content: center;   
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(60%);
+    height: auto;
+}
+footer{
+    font-family: cursive;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    background: rgb(130, 220, 243);
+    text-decoration: none;
+    text-transform: none;
+    height: 40px;
+}
+
+@media(max-width:600px) {
+    .nav {
+        flex-direction: column;
+        background: #d6d3d3;
+        margin-right: 5px;
+        border-radius: 5px;
+        }
+        .enlace {
+        margin: 5px;
+        }
+        .boton {
+        display: inline-block;
+        }
+        .desaparece {
+        display: none;
+        }
+    .nav {
+        flex-direction: block;
+    }
+    
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 10px;
+    }
+    .fam {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 10px;
+        width: 100% ;
+        text-align: center;
+    }
+}
+
+@media(max-width:1070px) {
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width:100% ;
+        margin-bottom: 10px;
+    }
+    .fam {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100% ;
+    }
+}
+
