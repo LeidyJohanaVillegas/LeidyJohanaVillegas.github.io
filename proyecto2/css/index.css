@@ -5,12 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .padre {
-    background: rgb(86, 202, 218);
+    background-color: rgb(115, 171, 255);
     display: flex;
     flex-flow: column nowrap;
 }
 .header {
-    background: url(../img/beach.jpg);
+    background: url(../img/wave.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: contain;
@@ -25,6 +25,7 @@
     flex-flow: row nowrap;
     height: auto;
     flex: 3 1 auto;
+    align-content: center;
 }
 .logo {
     width: calc(30%);
@@ -53,9 +54,8 @@
 }
 .social a {
     text-decoration: none;
-    color: rgb(15, 46, 36);
+    color: black;
     padding: 5px;
-    margin: 5px;
     align-items: left;
     justify-content: left; 
     letter-spacing: 5px;
@@ -79,6 +79,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    border: none;
+    align-content: center;
 }
 .enlace {
     position: relative;
@@ -87,10 +89,10 @@
     text-align: center;
     text-decoration: none;
     padding: 5px 10px;
-    border-radius: 5px;
+    border: none;
 }
 .enlace:hover {
-    background: #69e4f5;
+    background: #2b80f0;
     transform: perspective();
 }
 .boton {
@@ -98,27 +100,28 @@
     position: relative;
     padding: 10px 80px;
     list-style: none;
-    background: #69e4f5;
-    margin-right: 10px;
-    border-radius: 5px;
+    background:  rgb(115, 171, 255);
     text-decoration: none;
     text-transform: uppercase;
+    border: none;
+    margin-left: 0;
 }
 
 .crp {
-    background: #d6d3d3;
+    background: rgb(115, 171, 255);
     display: flex;
     width: 100%;
     text-align: center;
     align-content: center;
     justify-content: center;
     box-sizing: border-box;
+    margin:0;
 }
 
 .columna { 
     display: inline-block;
     width: calc(48%);
-    background: #69e4f5;
+    background: #365afa;
     color: black;
     margin: 10px;
     padding: 10px;
@@ -130,7 +133,7 @@
 }
 .columna:hover {
     transform: translate(-3);
-    box-shadow: 10px 10px 5px #2280fa;
+    box-shadow: 10px 10px 5px #15355e;
 }
 .foto {
     display: block; 
@@ -142,14 +145,17 @@
 }
 h1 {
     font-weight: 400px;
+    color: black;
 }
 
 h2 {
     font-weight: 300px;
+    color: black;
 }
 
 p {
     font-weight: 200px;
+    color: black;
 }
 
 footer{
@@ -157,7 +163,6 @@ footer{
     text-align: center;
     justify-content: center;
     color: black;
-    background: rgb(130, 220, 243);
     text-decoration: none;
     text-transform: none;
     height: 40px;
@@ -171,7 +176,7 @@ footer{
         border-radius: 5px;
         }
         .enlace {
-        margin: 5px;
+        margin: 2px;
         }
         .boton {
         display: inline-block;
@@ -190,12 +195,13 @@ footer{
         margin-bottom: 10px;
     }
     .columna {
+        display: flex;
+        width: 100%;
         flex-direction: column;
         padding: 20px;
         justify-content: center;
         align-content: center;
         margin-bottom: 10px;
-        width: 100% ;
         text-align: center;
     }
 }
@@ -209,13 +215,13 @@ footer{
         margin-bottom: 20px;
     }
     .columna {
-        flex-direction: column;
+        display: block;
+        width: 100%;
         padding: 20px;
         justify-content: center;
         align-content: center;
         text-align: center;
         margin-bottom: 20px;
-        width: 100% ;
     }
 }
 
