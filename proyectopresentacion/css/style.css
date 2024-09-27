@@ -420,7 +420,17 @@ section{
     font-size: 18px;
     margin: 0;
 }
-
+footer{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    width: 100%;
+    background-color: #3d3051;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: #fff;
+}
 /* Responsive para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
     .songs-grid {
