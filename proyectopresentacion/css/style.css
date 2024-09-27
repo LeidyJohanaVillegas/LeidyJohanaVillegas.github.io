@@ -17,7 +17,9 @@
 body{
     background-color: #433a57;
     font-family: 'Times New Roman', Times, serif;
-    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
 }
 header{
     background: linear-gradient(90deg, #433a57, #cb6ce6);/*Color de fondo*/
@@ -420,11 +422,82 @@ section{
     font-size: 18px;
     margin: 0;
 }
+
+.formulario {
+    display: block;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    background: #3d3051;
+}
+form{
+    display: block;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid #fff;
+    padding: 30px 350px;
+    border-radius: 15px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+form, h2 {
+    color: #fff;
+    font-size: 25px;
+}
+label {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #6b5784;
+    border: 2px solid #F0FAF1;
+    color: #fff;
+    outline: none;
+}
+input::placeholder, textarea::placeholder {
+    color: #fff;
+}
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-txt a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn {
+    font-size: 16px;
+    color: #fff;
+    border:0;
+    border-radius: 25px;
+    background-color: #6b5784;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #cb6ce6;
+}
+
 footer{
     text-align: center;
     align-content: center;
+    margin: 0;
     padding: 40px;
-    width: 100%;
+    width: 90%;
     background-color: #3d3051;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
@@ -512,6 +585,15 @@ footer{
         align-content: center;
         margin-bottom: 10px;
     }
+    form{
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+        width: 100% ;
+        text-align: center;
+    }
 }
 
 @media(max-width:1070px) {
@@ -521,5 +603,14 @@ footer{
         align-content: center;
         width: 100%;
         margin-bottom: 20px;
+    }
+    form {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100% ;
     }
 }
