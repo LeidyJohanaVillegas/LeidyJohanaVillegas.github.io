@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>VersosVortex</title>
 </head>
@@ -14,23 +15,32 @@
         </div>
         <div class="busqueda">
             <i class="fi fi-br-magnifying-glass-wave"></i>
-            <input type="text" placeholder="Busca tu cancion de preferencia">
+            <input type="text" placeholder="Busca la cancion">
         </div>
-        <nav class="nav-header">
+        <nav class="nav">
             <button class="boton">Menu</button>
-            <a href="#" class="nav-head">Home</a>
-            <a href="#" class="nav-head">Top letras</a>
-            <a href="#" class="nav-head">Novedades</a>
-            <a href="#" class="nav-head">Envia tu letra</a>
+            <a href="#" class="enlace desaparece">Home</a>
+            <a href="#" class="enlace desaparece">Top escuchadas</a>
+            <a href="#" class="enlace desaparece">Novedades</a>
+            <a href="#" class="enlace desaparece">Envia tu letra</a>
         </nav>
+        <script>
+            function accion() {
+                console.log('Proyecto presentacion');
+                var enlace = document.getElementsByClassName("enlace")
+                for (var i = 0; i < enlace.length; i++) {
+                    enlace[i].classList.toggle('desaparece')
+                }
+            }
+        </script>
     </header>
     <section>
         <nav class="generos">
             <a href="#">Todos</a>
-            <a href="#"><i class="fi fi-sr-play">POP</i></a>
-            <a href="#"><i class="fi fi-sr-play">REGUETON</i></a>
-            <a href="#"><i class="fi fi-sr-play">ROCK</i></a>
-            <a href="#"><i class="fi fi-sr-play">BACHATA</i></a>
+            <a href="#"><i class="fas fa-play"></i>POP</a>
+            <a href="#"><i class="fas fa-play"></i>REGUETON</a>
+            <a href="#"><i class="fas fa-play"></i>ROCK</a>
+            <a href="#"><i class="fas fa-play"></i>BACHATA</a>
         </nav>
     </section>
     <section class="wrapper">
@@ -38,32 +48,27 @@
             <ul class="slides">
                 <li class="slide" id="slide1">
                     <a href="#">
-                    <img src="" alt="">
-                    <p class="caption">Mago de OZ: Molinos del viento</p>
+                    <img src="img/MagodeOz.jpg" alt="Mago de OZ: Molinos del viento" width="1200px" height="450px">
                     </a>
                 </li>
                 <li class="slide" id="slide2">
                     <a href="#">
-                    <img src="" alt="">
-                    <p class="caption">Daddy Yankee: Gasolina</p>
+                    <img src="img/DaddyJankee.jpg" alt="Daddy Yankee: Gasolina" width="1200px" height="450px">
                     </a>
                 </li>
                 <li class="slide" id="slide3">
                     <a href="#">
-                    <img src="" alt="">
-                    <p class="caption">Olga Tañon: Es mentiroso</p>
+                    <img src="img/OlgaTañon.jpg" alt="Olga Tañon: Es mentiroso" width="1200px" height="450px">
                     </a>
                 </li>
                 <li class="slide" id="slide4">
                     <a href="#">
-                    <img src="" alt="">
-                    <p class="caption">Romeo Santos: Necio</p>
+                        <img src="img/RomeoSantos.jpg" alt="Romeo Santos: Necio" width="1200px" height="450px">
                     </a>
                 </li>
                 <li class="slide" id="slide1"></li>
                     <a href="#">
-                        <img src="" alt="">
-                    <p class="caption">Mago de OZ: Molinos del viento</p>
+                        <img src="img/MagodeOz.jpg" alt="Mago de Oz: Molinos de viento" width="1200px" height="450px">
                     </a>
                 </li>
             </ul>
@@ -74,6 +79,124 @@
                 <li><a href="#slide4">&bullet;</a></li>
                 <li><a href="#slide1">&bullet;</a></li>
             </ul>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="top">
+                <div class="titulo">
+                    <img src="img/FLECHA.png" alt="Top mas escuchadas">
+                    <h1>TOP ESCUCHADAS:</h1>
+                </div>
+                <div class="top-escuchadas">
+                    <div class="songs">
+                        <div class="song-item">
+                            <img src="https://link-to-michael-jackson-image" alt="Michael Jackson">
+                            <p>Thriller - Michael Jackson</p>
+                        </div>
+                        <div class="song-item">
+                            <img src="https://link-to-lady-gaga-image" alt="Lady Gaga">
+                            <p>Poker Face - Lady Gaga</p>
+                        </div>
+                        <div class="song-item">
+                            <img src="https://link-to-lady-gaga-image" alt="Lady Gaga">
+                            <p>Always Remember Us This Way - Lady Gaga</p>
+                        </div>
+                        <div class="song-item">
+                            <img src="https://link-to-miley-cyrus-image" alt="Miley Cyrus">
+                            <p>Flowers - Miley Cyrus</p>
+                        </div>
+                        <div class="song-item">
+                            <img src="https://link-to-miley-cyrus-image" alt="Miley Cyrus">
+                            <p>Wrecking Ball - Miley Cyrus</p>
+                        </div>
+                        <div class="song-item">
+                            <img src="https://link-to-rata-blanca-image" alt="Rata Blanca">
+                            <p>Mujer Amante - Rata Blanca</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="artistas-momento">
+                    <h2>Artistas del momento: </h2>
+                    <div class="artist-item">
+                        <img src="https://link-to-miley-cyrus-image" alt="Miley Cyrus">
+                        <p>Miley Cyrus</p>
+                    </div>
+                    <div class="artist-item">
+                        <img src="https://link-to-taylor-swift-image" alt="Taylor Swift">
+                        <p>Taylor Swift</p>
+                    </div>
+                    <div class="artist-item">
+                        <img src="https://link-to-the-weeknd-image" alt="The Weeknd">
+                        <p>The Weeknd</p>
+                    </div>
+                    <div class="artist-item">
+                        <img src="https://link-to-adele-image" alt="Adele">
+                        <p>Adele</p>
+                    </div>
+                    <div class="artist-item">
+                        <img src="https://link-to-peso-pluma-image" alt="Peso Pluma">
+                        <p>Peso Pluma</p>
+                    </div>
+                    <div class="artist-item">
+                        <img src="https://link-to-shakira-image" alt="Shakira">
+                        <p>Shakira</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="container2">
+            <!-- Título principal -->
+            <div class="titulo2">
+                <img src="img/icono.png" alt="Novedades" class="icono">
+                <h2>NOVEDADES:</h2>
+            </div>
+            <div class="caja">
+                    <!-- Contenedor de las canciones -->
+                <div class="songs-grid">
+                    <!-- Columna izquierda -->
+                    <div class="column">
+                        <div class="song-item1">
+                            <img src="img/weeknd.jpg" alt="The Weeknd">
+                            <p>Die for you - The Weeknd</p>
+                        </div>
+                        <div class="song-item1">
+                            <img src="img/adele.jpg" alt="Adele">
+                            <p>Rolling in the deep - Adele</p>
+                        </div>
+                        <div class="song-item1">
+                            <img src="img/don-omar.jpg" alt="Don Omar">
+                            <p>Bandoleros - Don Omar</p>
+                        </div>
+                        <div class="song-item1">
+                            <img src="img/daddy-yankee.jpg" alt="Daddy Yankee">
+                            <p>Gasolina - Daddy Yankee</p>
+                        </div>
+                    </div>
+                    <!-- Columna derecha -->
+                    <div class="column">
+                        <div class="song-item1">
+                            <img src="img/peso-pluma.jpg" alt="Peso Pluma">
+                            <p>Kulona - Peso Pluma</p>
+                        </div>
+                        <div class="song-item1">
+                            <img src="img/shakira.jpg" alt="Shakira">
+                            <p>Waka Waka - Shakira</p>
+                        </div>
+                        <div class="song-item1">
+                            <img src="img/karol-g.jpg" alt="Karol G">
+                            <p>TQG - Karol G</p>
+                        </div>
+                        <div class="song-item1">
+                            <img src="img/miley-cyrus.jpg" alt="Miley Cyrus">
+                            <p>The Climb - Miley Cyrus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
