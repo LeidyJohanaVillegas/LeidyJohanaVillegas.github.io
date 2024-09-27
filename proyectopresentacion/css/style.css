@@ -19,6 +19,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 
 }
 header{
@@ -90,6 +91,12 @@ header{
     background-color: #433a57;
     color: #fff;
     font-weight: bold;
+}
+section{
+    width: 90%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 .generos {
     display: flex; 
@@ -449,13 +456,13 @@ form, h2 {
     color: #fff;
     font-size: 25px;
 }
-label {
+form label {
     color: #fff;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
 }
-input, textarea {
+form input, textarea {
     padding: 17px 25px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -464,7 +471,7 @@ input, textarea {
     color: #fff;
     outline: none;
 }
-input::placeholder, textarea::placeholder {
+form input::placeholder, textarea::placeholder {
     color: #fff;
 }
 .form-txt {
@@ -505,60 +512,53 @@ footer{
     color: #fff;
 }
 /* Responsive para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-    .songs-grid {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .column {
-        width: 100%;
-    }
-}
 .music-notes {
     animation: float 3s infinite ease-in-out;
     font-size: 30px;
 }
-
-/* Responsive */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
-
     .top-escuchadas, .artistas-momento {
-        width: 100%;
+        width: calc(85% - 20px);
         margin-bottom: 20px;
     }
-
     .song-item img, .artist-item img {
         width: 50px;
         height: 50px;
         margin-right: 15px;
     }
-
     .song-item p, .artist-item p {
         font-size: 18px;
+    }
+    .container2{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .songs-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: calc(85% - 20px);
     }
 }
 @media only screen and (min-width: 1200px) {
 	.slide {
 		width: 1200px;
 	}
-	.caption {
-		font-size: 96px;
-		bottom: 96px;
-		right: 50px;
-	}
 }
 @media(max-width:600px) {
     .nav-head {
         flex-direction: column;
-        background: #cb6ce6;
         margin-right: 5px;
         border-radius: 5px;
+        width: calc(70% - 20px) ;
         }
         .enlace {
         margin: 5px;
@@ -571,10 +571,13 @@ footer{
         }
     .nav {
         flex-direction: block;
+        width: calc(70% - 20px) ;
     }
     .generos {
         display: flex;
         background: #cb6ce6;
+        color: black;
+        width: calc(95% - 20px) ;
         margin-right: 5px;
         border-radius: 5px;
         font-size: 14px;
@@ -584,6 +587,7 @@ footer{
         justify-content: center;
         align-content: center;
         margin-bottom: 10px;
+        width: calc(70% - 20px) ;
     }
     form{
         flex-direction: column;
@@ -591,7 +595,7 @@ footer{
         justify-content: center;
         align-content: center;
         margin-bottom: 20px;
-        width: 100% ;
+        width: calc(70% - 20px) ;
         text-align: center;
     }
 }
@@ -601,7 +605,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 100%;
+        width: calc(80% - 20px);
         margin-bottom: 20px;
     }
     form {
